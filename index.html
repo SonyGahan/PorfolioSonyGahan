@@ -8,59 +8,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="img/iconosolapa.png">
 	<title>Porfolio Web | Sonia Pereira</title>
-	<!-- Fuente del sitio -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
 		rel="stylesheet">
-	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Font Awesome (para íconos) -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-	<!-- Devicon (para íconos de Herramientas) -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-	<!-- Hoja de estilos personalizada -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body id="fondo">
-	<!-- Barra de Navegación -->
 	<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
 		<div class="container-fluid">
-			<!-- Logo animado (GIF) -->
-			<a class="navbar-brand" href="#">
-				<img src="img/logo/logo9.gif" alt="Logo animado" class="navbar-logo">
+			<a class="navbar-brand text-white d-flex align-items-center gap-2" href="#">
+				<i class="fas fa-code navbar-logo-icon"></i>
+				<span class="logo-texto">SonyGahan<span class="punto-tech">.dev</span><span
+						class="cursor-terminal">_</span></span>
 			</a>
 
-			<!-- Botón de menú para dispositivos móviles -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<!-- Contenido de la barra de navegación -->
 			<div class="collapse navbar-collapse" id="navbarNav">
-				<!-- Enlaces a las secciones -->
 				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#acerca">Acerca de</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#experiencia">Experiencia</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#educacion">Educación</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#skills">Habilidades</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#cursos">Cursos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contacto">Contacto</a>
-					</li>
+					<li class="nav-item"><a class="nav-link" href="#acerca">Acerca de</a></li>
+					<li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+					<li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+					<li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+					<li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
 				</ul>
 
-				<!-- Botón "Ingresar" en el extremo derecho -->
 				<div class="ms-3">
 					<a href="#" class="btn btn-ingresar">Ingresar</a>
 				</div>
@@ -68,46 +47,33 @@
 		</div>
 	</nav>
 
-	<!-- Contenedor principal para el contenido -->
 	<div class="contenedor-principal">
-		<!-- Carrusel dentro de un contenedor claro y redondeado -->
-		<div class="seccion-contenedor">
+		<div class="seccion-contenedor p-0 overflow-hidden">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-				<!-- Contenido del carrusel (imágenes) -->
 				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="img/slider/slider1.png" class="d-block w-100" alt="Slide 1">
+					<div class="carousel-item active"><img src="img/slider/slider1.png" class="d-block w-100"
+							alt="Slide 1"></div>
+					<div class="carousel-item"><img src="img/slider/slider2.jpg" class="d-block w-100" alt="Slide 2">
 					</div>
-					<div class="carousel-item">
-						<img src="img/slider/slider2.jpg" class="d-block w-100" alt="Slide 2">
+					<div class="carousel-item"><img src="img/slider/slider3.jpg" class="d-block w-100" alt="Slide 3">
 					</div>
-					<div class="carousel-item">
-						<img src="img/slider/slider3.jpg" class="d-block w-100" alt="Slide 3">
+					<div class="carousel-item"><img src="img/slider/slider4.jpg" class="d-block w-100" alt="Slide 4">
 					</div>
-					<div class="carousel-item">
-						<img src="img/slider/slider4.jpg" class="d-block w-100" alt="Slide 4">
-					</div>
-					<div class="carousel-item">
-						<img src="img/slider/slider5.jpg" class="d-block w-100" alt="Slide 5">
+					<div class="carousel-item"><img src="img/slider/slider5.jpg" class="d-block w-100" alt="Slide 5">
 					</div>
 				</div>
 
-				<!-- Título centrado sobre el carrusel -->
 				<h1 id="tituloprincipal">Porfolio Web | Sonia Pereira</h1>
 
-				<!-- Imagen de perfil superpuesta -->
 				<div class="profile-container">
 					<img src="img/perfilchica.jpg" class="rounded-circle border border-4 profile-img"
 						alt="Foto de perfil">
 				</div>
 			</div>
 
-			<!-- Contenido Principal -->
-			<div class="container-xxl mt-4">
-				<!-- Sección de Información Personal -->
-				<div class="seccion-contenedor informacion-personal"> <!-- Clase añadida -->
+			<div class="container-xxl mt-4 px-4 pb-4">
+				<div class="informacion-personal">
 					<div class="row align-items-center">
-						<!-- Columna de la izquierda: Información personal -->
 						<div class="col-sm-12 col-md-6 mb-4 mb-md-0">
 							<div class="presentacion-personal">
 								<p class="subtitle">Full Stack Developer - Asistente Técnico Profesional</p>
@@ -116,15 +82,12 @@
 							</div>
 						</div>
 
-						<!-- Columna de la derecha: Logos institucionales -->
 						<div class="col-sm-12 col-md-6">
 							<div class="logos-institucionales">
-								<!-- Logo 1 -->
 								<div class="logo-item">
-									<img src="img/senaflogo.jpg" alt="Logo MDS">
+									<img src="img/senaflogo.jpg" alt="Logo SENAF">
 									<p>Secretaría Nacional de Niñez, Adolescencia y Familia</p>
 								</div>
-								<!-- Logo 2 -->
 								<div class="logo-item">
 									<img src="img/uba.jpg" alt="Logo UBA">
 									<p>Universidad de Buenos Aires | UBA</p>
@@ -136,7 +99,6 @@
 			</div>
 		</div>
 
-		<!-- Seccion acerca de -->
 		<div class="seccion-contenedor" id="acerca">
 			<div class="col-sm-12">
 				<h3 class="p-1 mb-4 bg-primary-custom text-white">Acerca de</h3>
@@ -144,61 +106,47 @@
 
 			<div class="container">
 				<div class="row">
-					<!-- Columna izquierda -->
 					<div class="col-md-4 text-left">
-						<p>
-							Soy Analista de Sistemas, egresada de la Facultad de Ingeniería de la UBA. Desde 2005, he
+						<p>Soy Analista de Sistemas, egresada de la Facultad de Ingeniería de la UBA. Desde 2005, he
 							formado parte del equipo de Monitoreo y Seguimiento de Políticas Sociales en la Secretaría
 							Nacional de Niñez, Adolescencia y Familia, donde he consolidado una trayectoria enfocada en
-							la gestión y el análisis de datos.
-						</p>
-						<p>
-							Mi experiencia se ha desarrollado principalmente en el ámbito administrativo, pero mi
-							interés por la tecnología me ha llevado a especializarme en el desarrollo de aplicaciones
-							web. Con formación en desarrollo Full Stack, he adquirido conocimientos en tecnologías como
-							Java, PHP y JavaScript, así como en frameworks como Angular y Spring Boot, lo que me ha
-							permitido participar en proyectos técnicos documentados en mi perfil de GitHub.
-						</p>
+							la gestión y el análisis de datos.</p>
+						<p>Mi experiencia se ha desarrollado principalmente en el ámbito administrativo, pero mi interés
+							por la tecnología me ha llevado a especializarme en el desarrollo de aplicaciones web. Con
+							formación en desarrollo Full Stack, he adquirido conocimientos en tecnologías como Java, PHP
+							y JavaScript, así como en frameworks como Angular y Spring Boot, lo que me ha permitido
+							participar en proyectos técnicos documentados en mi perfil de GitHub.</p>
 					</div>
 
-					<!-- Columna central (imagen) -->
 					<div class="col-md-4 d-flex align-items-center justify-content-center">
-						<img src="img/cards/card11.jpg" class="img-fluid rounded-start" alt="Imagen de perfil">
+						<img src="img/cards/card11.jpg" class="img-fluid rounded" alt="Imagen de perfil secundaria">
 					</div>
 
-					<!-- Columna derecha -->
 					<div class="col-md-4 text-left">
-						<p>
-							Me considero una persona versátil, con facilidad para adaptarme a nuevos entornos y aprender
+						<p>Me considero una persona versátil, con facilidad para adaptarme a nuevos entornos y aprender
 							rápidamente. Disfruto del trabajo en equipo y me enfoco en contribuir de manera
 							colaborativa, buscando siempre soluciones prácticas y eficientes. Mi enfoque analítico y
 							reflexivo me ha permitido enfrentar desafíos laborales con una actitud proactiva y
-							resolutiva.
-						</p>
-						<p>
-							Mi compromiso con el aprendizaje continuo y mi curiosidad por la innovación son pilares
+							resolutiva.</p>
+						<p>Mi compromiso con el aprendizaje continuo y mi curiosidad por la innovación son pilares
 							fundamentales en mi desarrollo profesional. Aspiro a seguir creciendo en el ámbito del
 							desarrollo de software, aportando mis conocimientos y experiencia para contribuir al éxito
-							de proyectos tecnológicos.
-						</p>
+							de proyectos tecnológicos.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Sección de Experiencia Laboral -->
 		<div class="seccion-contenedor" id="experiencia">
 			<div class="col-sm-12">
 				<h3 class="p-1 mb-4 bg-primary-custom text-white">Experiencia</h3>
 			</div>
 
 			<div class="container">
-				<div class="row justify-content-center"> <!-- Centrar las cards horizontalmente -->
-					<!-- Card 1 -->
-					<div class="col-sm-6 col-md-4 col-lg-3 mb-4"> <!-- Ajustar el tamaño de las columnas -->
-						<div class="card h-100"> <!-- Asegurar que todas las cards tengan la misma altura -->
-							<img src="img/cards/card7.jpg" class="card-img-top"
-								alt="Secretaría Nacional de Niñez, Adolescencia y Familia">
+				<div class="row justify-content-center">
+					<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+						<div class="card h-100">
+							<img src="img/cards/card7.jpg" class="card-img-top" alt="SENAF">
 							<div class="card-body">
 								<h5 class="card-title">Secretaría Nacional de Niñez, Adolescencia y Familia</h5>
 								<p><strong>Técnico Informático Profesional</strong></p>
@@ -207,11 +155,9 @@
 						</div>
 					</div>
 
-					<!-- Card 2 -->
 					<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
 						<div class="card h-100">
-							<img src="img/cards/card8.jpg" class="card-img-top"
-								alt="Dirección General de Educación Vial y Licencias">
+							<img src="img/cards/card8.jpg" class="card-img-top" alt="Educación Vial">
 							<div class="card-body">
 								<h5 class="card-title">Dirección General de Educación Vial y Licencias del Gobierno de
 									la Ciudad</h5>
@@ -221,10 +167,9 @@
 						</div>
 					</div>
 
-					<!-- Card 3 -->
 					<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
 						<div class="card h-100">
-							<img src="img/cards/card10.jpg" class="card-img-top" alt="ICONTEAM diseño web">
+							<img src="img/cards/card10.jpg" class="card-img-top" alt="ICONTEAM">
 							<div class="card-body">
 								<h5 class="card-title">ICONTEAM diseño web</h5>
 								<p><strong>Técnico Informático</strong></p>
@@ -233,11 +178,9 @@
 						</div>
 					</div>
 
-					<!-- Card 4 -->
 					<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
 						<div class="card h-100">
-							<img src="img/cards/card9.jpg" class="card-img-top"
-								alt="ELSERVER SRL desarrollo web y hosting">
+							<img src="img/cards/card9.jpg" class="card-img-top" alt="ELSERVER">
 							<div class="card-body">
 								<h5 class="card-title">ELSERVER SRL desarrollo web y hosting</h5>
 								<p><strong>Técnico Informático</strong></p>
@@ -249,15 +192,14 @@
 			</div>
 		</div>
 
-		<!-- Seccion de Educacion -->
 		<div class="seccion-contenedor" id="educacion">
 			<h3 class="p-1 mb-4 bg-primary-custom text-white">Educación</h3>
 
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
-						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
-							<img src="img/cards/card1.jpg" class="card-img-top" alt="...">
+				<div class="row g-4">
+					<div class="col-sm-4 d-flex justify-content-center">
+						<div class="card w-100" style="max-width: 18rem;">
+							<img src="img/cards/card1.jpg" class="card-img-top" alt="UBA">
 							<div class="card-body">
 								<h5 class="card-title">Formación Universitaria</h5>
 								<p><strong>Licenciatura en Sistemas</strong></p>
@@ -267,9 +209,9 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
-						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
-							<img src="img/cards/card5.jpg" class="card-img-top" alt="...">
+					<div class="col-sm-4 d-flex justify-content-center">
+						<div class="card w-100" style="max-width: 18rem;">
+							<img src="img/cards/card5.jpg" class="card-img-top" alt="IFTS 29">
 							<div class="card-body">
 								<h5 class="card-title">Formación Universitaria</h5>
 								<p><strong>Tecnicatura Superior en Desarrollo de Software</strong></p>
@@ -279,9 +221,9 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
-						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
-							<img src="img/cards/card2.jpg" class="card-img-top" alt="...">
+					<div class="col-sm-4 d-flex justify-content-center">
+						<div class="card w-100" style="max-width: 18rem;">
+							<img src="img/cards/card2.jpg" class="card-img-top" alt="Mariano Moreno">
 							<div class="card-body">
 								<h5 class="card-title">Formación Terciaria</h5>
 								<p><strong>Analista de Sistemas</strong></p>
@@ -290,37 +232,34 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
-						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
-							<img src="img/cards/card3.jpg" class="card-img-top" alt="...">
+
+					<div class="col-sm-4 d-flex justify-content-center">
+						<div class="card w-100" style="max-width: 18rem;">
+							<img src="img/cards/card3.jpg" class="card-img-top" alt="Analista Programador">
 							<div class="card-body">
 								<h5 class="card-title">Formación Terciaria</h5>
 								<p><strong>Analista Programador</strong></p>
-								<p>
 								<p>Instituto Superior Mariano Moreno</p>
 								<p>Año 1994</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
-						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
-							<img src="img/cards/card4.jpg" class="card-img-top" alt="...">
+
+					<div class="col-sm-4 d-flex justify-content-center">
+						<div class="card w-100" style="max-width: 18rem;">
+							<img src="img/cards/card4.jpg" class="card-img-top" alt="FUCE">
 							<div class="card-body">
 								<h5 class="card-title">Formación Terciaria</h5>
 								<p><strong>Técnico Superior de PC y Redes</strong></p>
-								<p>Instituto FUCE </p>
+								<p>Instituto FUCE</p>
 								<p>Año 2002</p>
 							</div>
 						</div>
 					</div>
 
-					
-
-					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
-						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
-							<img src="img/cards/card6.jpg" class="card-img-top" alt="...">
+					<div class="col-sm-4 d-flex justify-content-center">
+						<div class="card w-100" style="max-width: 18rem;">
+							<img src="img/cards/card6.jpg" class="card-img-top" alt="Italiano">
 							<div class="card-body">
 								<h5 class="card-title">Idiomas</h5>
 								<p><strong>Italiano</strong></p>
@@ -333,13 +272,11 @@
 			</div>
 		</div>
 
-		<!-- Sección de Habilidades -->
 		<div class="seccion-contenedor" id="skills">
 			<div class="col-sm-12">
 				<h3 class="p-1 mb-4 bg-primary-custom text-white">Tecnologías y Herramientas</h3>
 			</div>
 
-			<!-- Pestañas para categorías -->
 			<ul class="nav nav-tabs" id="skillsTabs" role="tablist">
 				<li class="nav-item" role="presentation">
 					<button class="nav-link active" id="lenguajes-tab" data-bs-toggle="tab" data-bs-target="#lenguajes"
@@ -355,665 +292,476 @@
 				</li>
 			</ul>
 
-			<!-- Contenido de las pestañas -->
 			<div class="tab-content" id="skillsTabsContent">
-				<!-- Pestaña 1: Lenguajes -->
 				<div class="tab-pane fade show active" id="lenguajes" role="tabpanel" aria-labelledby="lenguajes-tab">
 					<div class="skills-grid">
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-							<span>JAVA</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-							<span>TypeScript</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-							<span>JavaScript</span>
-						</div>
-						<div class="skill-card">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
-								alt="HTML5" />
-							<span>HTML5</span>
-						</div>
-						<div class="skill-card">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
-								alt="CSS3" />
-							<span>CSS3</span>
-						</div>
-						<div class="skill-card">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
-								alt="PHP" />
-							<span>PHP</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-							<span>C Sharp</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-							<span>Python</span>
-						</div>
-						<div class="skill-card">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" />
-							<span>R</span>
-						</div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+								alt="Java" /><span>JAVA</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+								alt="TS" /><span>TypeScript</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+								alt="JS" /><span>JavaScript</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+								alt="HTML5" /><span>HTML5</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+								alt="CSS3" /><span>CSS3</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+								alt="PHP" /><span>PHP</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+								alt="C#" /><span>C Sharp</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+								alt="Python" /><span>Python</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg"
+								alt="R" /><span>R</span></div>
 					</div>
 				</div>
 
-				<!-- Pestaña 2: Frameworks y Librerías -->
 				<div class="tab-pane fade" id="frameworks" role="tabpanel" aria-labelledby="frameworks-tab">
 					<div class="skills-grid">
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
-							<span>Spring Boot</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-							<span>Angular</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
-							<span>Node.js</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original.svg" />
-							<span>Hibernate</span>
-						</div>
-						<div class="skill-card">
-							<img src="img/logocursos/thymeleaf.png" alt="Thymeleaf" />
-							<span>Thymeleaf</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" />
-							<span>FireBase</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-							<span>Bootstrap</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" />
-							<span>Maven</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" />
-							<span>NPM</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" />
-							<span>Swagger</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" />
-							<span>Selenium</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spss/spss-original.svg" />
-							<span>SPSS</span>
-						</div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+								alt="Spring" /><span>Spring Boot</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+								alt="Angular" /><span>Angular</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+								alt="Node" /><span>Node.js</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original.svg"
+								alt="Hibernate" /><span>Hibernate</span></div>
+						<div class="skill-card"><img src="img/logocursos/thymeleaf.png"
+								alt="Thymeleaf" /><span>Thymeleaf</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+								alt="Firebase" /><span>FireBase</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+								alt="Bootstrap" /><span>Bootstrap</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
+								alt="Maven" /><span>Maven</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+								alt="NPM" /><span>NPM</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg"
+								alt="Swagger" /><span>Swagger</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg"
+								alt="Selenium" /><span>Selenium</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spss/spss-original.svg"
+								alt="SPSS" /><span>SPSS</span></div>
 					</div>
 				</div>
 
-				<!-- Pestaña 3: Herramientas -->
 				<div class="tab-pane fade" id="herramientas" role="tabpanel" aria-labelledby="herramientas-tab">
 					<div class="skills-grid">
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
-							<span>IntelliJ IDEA</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" />
-							<span>Eclipse</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" />
-							<span>NetBeans</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-							<span>MySQL</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
-							<span>PostGreSQL</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-							<span>Github</span>
-						</div>
-						<div class="skill-card">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-							<span>Git</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
-							<span>Visual Studio</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg" />
-							<span>Insomnia</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
-							<span>VS Code</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
-							<span>Postman</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg" />
-							<span>Trello</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg" />
-							<span>Apache</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />
-							<span>Canva</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-							<span>Figma</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" />
-							<span>Illustrator</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" />
-							<span>Photoshop</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" />
-							<span>JSON</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" />
-							<span>Netlify</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" />
-							<span>Oracle</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rstudio/rstudio-original.svg" />
-							<span>R Studio</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" />
-							<span>SQLite</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg" />
-							<span>TomCat</span>
-						</div>
-						<div class="skill-card">
-							<img
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" />
-							<span>Vercel</span>
-						</div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg"
+								alt="IntelliJ" /><span>IntelliJ IDEA</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg"
+								alt="Eclipse" /><span>Eclipse</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg"
+								alt="NetBeans" /><span>NetBeans</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+								alt="MySQL" /><span>MySQL</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+								alt="PostgreSQL" /><span>PostGreSQL</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+								alt="GitHub" /><span>Github</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+								alt="Git" /><span>Git</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"
+								alt="VS" /><span>Visual Studio</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg"
+								alt="Insomnia" /><span>Insomnia</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+								alt="VS Code" /><span>VS Code</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+								alt="Postman" /><span>Postman</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg"
+								alt="Trello" /><span>Trello</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg"
+								alt="Apache" /><span>Apache</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"
+								alt="Canva" /><span>Canva</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+								alt="Figma" /><span>Figma</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg"
+								alt="Illustrator" /><span>Illustrator</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"
+								alt="Photoshop" /><span>Photoshop</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg"
+								alt="JSON" /><span>JSON</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg"
+								alt="Netlify" /><span>Netlify</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
+								alt="Oracle" /><span>Oracle</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rstudio/rstudio-original.svg"
+								alt="RStudio" /><span>R Studio</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"
+								alt="SQLite" /><span>SQLite</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg"
+								alt="Tomcat" /><span>TomCat</span></div>
+						<div class="skill-card"><img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg"
+								alt="Vercel" /><span>Vercel</span></div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Sección de Licencias y Cursos -->
 		<div class="seccion-contenedor" id="cursos">
 			<div class="col-sm-12">
 				<h3 class="p-1 mb-4 bg-primary-custom text-white">Licencias y Cursos</h3>
 			</div>
 
-			<!-- Pestañas para categorías -->
 			<ul class="nav nav-tabs" id="cursosTabs" role="tablist">
 				<li class="nav-item" role="presentation">
 					<button class="nav-link active" id="desarrollo-web-tab" data-bs-toggle="tab"
-						data-bs-target="#desarrollo-web" type="button" role="tab" aria-controls="desarrollo-web"
-						aria-selected="true">Desarrollo Web</button>
+						data-bs-target="#desarrollo-web" type="button" role="tab">Desarrollo Web</button>
 				</li>
 				<li class="nav-item" role="presentation">
 					<button class="nav-link" id="ia-tab" data-bs-toggle="tab" data-bs-target="#ia" type="button"
-						role="tab" aria-controls="ia" aria-selected="false">Inteligencia Artificial</button>
+						role="tab">Inteligencia Artificial</button>
 				</li>
 				<li class="nav-item" role="presentation">
 					<button class="nav-link" id="idiomas-tab" data-bs-toggle="tab" data-bs-target="#idiomas"
-						type="button" role="tab" aria-controls="idiomas" aria-selected="false">Idiomas</button>
+						type="button" role="tab">Idiomas</button>
 				</li>
 				<li class="nav-item" role="presentation">
 					<button class="nav-link" id="otros-tab" data-bs-toggle="tab" data-bs-target="#otros" type="button"
-						role="tab" aria-controls="otros" aria-selected="false">Otros</button>
+						role="tab">Otros</button>
 				</li>
 			</ul>
 
-			<!-- Contenido de las pestañas -->
 			<div class="tab-content" id="cursosTabsContent">
-				<!-- Pestaña 1: Desarrollo Web -->
-				<div class="tab-pane fade show active" id="desarrollo-web" role="tabpanel"
-					aria-labelledby="desarrollo-web-tab">
+				<div class="tab-pane fade show active" id="desarrollo-web" role="tabpanel">
 					<div class="cursos-grid">
-						<!-- Curso 1 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/Tecno3F.PNG" alt="Logo Tecno3F">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/Tecno3F.PNG" alt="Logo Tecno3F"></div>
 							<div class="curso-info">
 								<h5>Programación en PHP con MySQL</h5>
 								<p><strong>Institución:</strong> Tecno 3F</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoOtros4">Ver más</button>
-								<div id="detallesCursoOtros4" class="collapse">
+									data-bs-target="#detallesCursoDW1">Ver más</button>
+								<div id="detallesCursoDW1" class="collapse mt-2">
 									<p><strong>Expedición:</strong> jun. 2025</p>
 									<p><strong>Descripción:</strong> Curso de PHP con MySQL.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 2 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura"></div>
 							<div class="curso-info">
 								<h5>Java y Spring Framework</h5>
 								<p><strong>Institución:</strong> ONE Alura Latam</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso1">Ver
-									más</button>
-								<div id="detallesCurso1" class="collapse">
+									data-bs-target="#detallesCursoDW2">Ver más</button>
+								<div id="detallesCursoDW2" class="collapse mt-2">
 									<p><strong>Expedición:</strong> ene. 2025</p>
-									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con
-										JAVA y SpringBoot Framework.</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con JAVA y
+										SpringBoot Framework.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 3 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura"></div>
 							<div class="curso-info">
 								<h5>Java Orientado a Objetos</h5>
 								<p><strong>Institución:</strong> ONE Alura Latam</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso2">Ver
-									más</button>
-								<div id="detallesCurso2" class="collapse">
-									<p><strong>Expedición:</strong> dic. 2024
-									</p>
+									data-bs-target="#detallesCursoDW3">Ver más</button>
+								<div id="detallesCursoDW3" class="collapse mt-2">
+									<p><strong>Expedición:</strong> dic. 2024</p>
 									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo orientado a
 										Objetos.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 4 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/codoacodologo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/codoacodologo.jpeg" alt="Logo Caco"></div>
 							<div class="curso-info">
 								<h5>Codo a Codo 4.0 - Full Stack PHP</h5>
 								<p><strong>Institución:</strong> Agencia de Habilidades para el Futuro</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso3">Ver
-									más</button>
-								<div id="detallesCurso3" class="collapse">
+									data-bs-target="#detallesCursoDW4">Ver más</button>
+								<div id="detallesCursoDW4" class="collapse mt-2">
 									<p><strong>Expedición:</strong> jul. 2024</p>
-									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con
-										PHP.</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con PHP.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 5 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura"></div>
 							<div class="curso-info">
 								<h5>Programación con JavaScript</h5>
 								<p><strong>Institución:</strong> ONE Alura Latam</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso4">Ver
-									más</button>
-								<div id="detallesCurso4" class="collapse">
+									data-bs-target="#detallesCursoDW5">Ver más</button>
+								<div id="detallesCursoDW5" class="collapse mt-2">
 									<p><strong>Expedición:</strong> jun. 2024</p>
-									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con
-										JS.</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con JS.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 6 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/codoacodologo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/codoacodologo.jpeg" alt="Logo Caco"></div>
 							<div class="curso-info">
 								<h5>Codo a Codo 4.0 - Desarrollo Web (JavaScript/NodeJS)</h5>
 								<p><strong>Institución:</strong> Agencia de Habilidades para el Futuro</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso5">Ver
-									más</button>
-								<div id="detallesCurso5" class="collapse">
+									data-bs-target="#detallesCursoDW6">Ver más</button>
+								<div id="detallesCursoDW6" class="collapse mt-2">
 									<p><strong>Expedición:</strong> may. 2024</p>
-									<p><strong>Descripción:</strong> Desarrollo web Fullstack con
-										JS/NodeJS.</p>
+									<p><strong>Descripción:</strong> Desarrollo web Fullstack con JS/NodeJS.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 7 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/itpatagonia_logo.jpeg" alt="Logo Alura">
+							<div class="curso-logo"><img src="img/logocursos/itpatagonia_logo.jpeg" alt="Logo ITP">
 							</div>
 							<div class="curso-info">
 								<h5>IT Patagonia - Bootcamp JAVA</h5>
 								<p><strong>Institución:</strong> IT Patagonia - Codeki</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso6">Ver
-									más</button>
-								<div id="detallesCurso6" class="collapse">
+									data-bs-target="#detallesCursoDW7">Ver más</button>
+								<div id="detallesCursoDW7" class="collapse mt-2">
 									<p><strong>Expedición:</strong> may. 2024</p>
 									<p><strong>Descripción:</strong> Bootcamp avanzado sobre desarrollo BackEnd con
 										JAVA.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 8 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/utnlogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/utnlogo.jpeg" alt="Logo UTN"></div>
 							<div class="curso-info">
 								<h5>Desarrollador JAVA intermedio</h5>
 								<p><strong>Institución:</strong> Universidad Tecnológica Nacional</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso7">Ver
-									más</button>
-								<div id="detallesCurso7" class="collapse">
+									data-bs-target="#detallesCursoDW8">Ver más</button>
+								<div id="detallesCursoDW8" class="collapse mt-2">
 									<p><strong>Expedición:</strong> nov. 2023</p>
-									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo BackEnd con
-										JAVA.</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo BackEnd con JAVA.
+									</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 9 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/unnelogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/unnelogo.jpeg" alt="Logo UNNE"></div>
 							<div class="curso-info">
 								<h5>Programador Diseño Dinamico FrontEnd</h5>
 								<p><strong>Institución:</strong> Universidad Nacional del Nordeste</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso8">Ver
-									más</button>
-								<div id="detallesCurso8" class="collapse">
+									data-bs-target="#detallesCursoDW9">Ver más</button>
+								<div id="detallesCursoDW9" class="collapse mt-2">
 									<p><strong>Expedición:</strong> ago. 2023</p>
-									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web FrontEnd
-										con Angular.</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web FrontEnd con
+										Angular.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 10 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/itmasterlogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/itmasterlogo.jpeg" alt="Logo ITM"></div>
 							<div class="curso-info">
-								<h5>Programador Web Full StackP</h5>
+								<h5>Programador Web Full Stack</h5>
 								<p><strong>Institución:</strong> IT Masters (Charles Sturt University)</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso9">Ver
-									más</button>
-								<div id="detallesCurso9" class="collapse">
+									data-bs-target="#detallesCursoDW10">Ver más</button>
+								<div id="detallesCursoDW10" class="collapse mt-2">
 									<p><strong>Expedición:</strong> ago. 2023</p>
-									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con
-										JS/React.</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con JS/React.
+									</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 11 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/codoacodologo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/codoacodologo.jpeg" alt="Logo Caco"></div>
 							<div class="curso-info">
 								<h5>Codo a Codo 4.0 - Full Stack Java</h5>
 								<p><strong>Institución:</strong> Agencia de Habilidades para el Futuro</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso10">Ver
-									más</button>
-								<div id="detallesCurso10" class="collapse">
+									data-bs-target="#detallesCursoDW11">Ver más</button>
+								<div id="detallesCursoDW11" class="collapse mt-2">
 									<p><strong>Expedición:</strong> jul. 2023</p>
-									<p><strong>Descripción:</strong> Curso avanzado Fullstack con
-										JS/JAVA.</p>
+									<p><strong>Descripción:</strong> Curso avanzado Fullstack con JS/JAVA.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 12 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/unnelogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/unnelogo.jpeg" alt="Logo UNNE"></div>
 							<div class="curso-info">
 								<h5>Programador Diseño Estatico FrontEnd</h5>
 								<p><strong>Institución:</strong> Universidad Nacional del Nordeste</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso11">Ver
-									más</button>
-								<div id="detallesCurso11" class="collapse">
+									data-bs-target="#detallesCursoDW12">Ver más</button>
+								<div id="detallesCursoDW12" class="collapse mt-2">
 									<p><strong>Expedición:</strong> jul. 2023</p>
-									<p><strong>Descripción:</strong> Desarrollo web con
-										HTML,CSS,JS.</p>
+									<p><strong>Descripción:</strong> Desarrollo web con HTML,CSS,JS.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 13 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/utnlogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/utnlogo.jpeg" alt="Logo UTN"></div>
 							<div class="curso-info">
 								<h5>Desarrollador Java Programación / Testing</h5>
 								<p><strong>Institución:</strong> Universidad Tecnológica Nacional</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso12">Ver
-									más</button>
-								<div id="detallesCurso12" class="collapse">
+									data-bs-target="#detallesCursoDW13">Ver más</button>
+								<div id="detallesCursoDW13" class="collapse mt-2">
 									<p><strong>Expedición:</strong> abr. 2023</p>
-									<p><strong>Descripción:</strong> Trayecto formativo de programacion JAVA y
-										Testing.</p>
+									<p><strong>Descripción:</strong> Trayecto formativo de programacion JAVA y Testing.
+									</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 14 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/logointi.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/logointi.jpeg" alt="Logo INTI"></div>
 							<div class="curso-info">
 								<h5>#YoProgramo, Full Stack Junior</h5>
 								<p><strong>Institución:</strong> INTI</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso13">Ver
-									más</button>
-								<div id="detallesCurso13" class="collapse">
+									data-bs-target="#detallesCursoDW14">Ver más</button>
+								<div id="detallesCursoDW14" class="collapse mt-2">
 									<p><strong>Expedición:</strong> ago. 2022</p>
-									<p><strong>Descripción:</strong> Desarrollo Fullstack con
-										ANGULAR/MySQL/SPRINGBOOT.</p>
+									<p><strong>Descripción:</strong> Desarrollo Fullstack con ANGULAR/MySQL/SPRINGBOOT.
+									</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 15 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/mumukilogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/mumukilogo.jpeg" alt="Logo Mumu"></div>
 							<div class="curso-info">
 								<h5># Se Programar Argentina Programa</h5>
 								<p><strong>Institución:</strong> INTI</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCurso14">Ver
-									más</button>
-								<div id="detallesCurso14" class="collapse">
+									data-bs-target="#detallesCursoDW15">Ver más</button>
+								<div id="detallesCursoDW15" class="collapse mt-2">
 									<p><strong>Expedición:</strong> oct. 2021</p>
-									<p><strong>Descripción:</strong> Curso de programación con
-										MUMUKI/JS/RUBY.</p>
+									<p><strong>Descripción:</strong> Curso de programación con MUMUKI/JS/RUBY.</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<!-- Pestaña 2: Inteligencia Artificial -->
-				<div class="tab-pane fade" id="ia" role="tabpanel" aria-labelledby="ia-tab">
+				<div class="tab-pane fade" id="ia" role="tabpanel">
 					<div class="cursos-grid">
-						<!-- Curso 1 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/Tecno3F.PNG" alt="Logo Tecno3F">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/Tecno3F.PNG" alt="Logo Tecno3F"></div>
 							<div class="curso-info">
 								<h5>Inteligencia Artificial con N8N</h5>
 								<p><strong>Institución:</strong> Tecno 3F</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoOtros4">Ver más</button>
-								<div id="detallesCursoOtros4" class="collapse">
+									data-bs-target="#detallesCursoIA1">Ver más</button>
+								<div id="detallesCursoIA1" class="collapse mt-2">
 									<p><strong>Expedición:</strong> nov. 2025</p>
 									<p><strong>Descripción:</strong> Curso de Inteligencia Artificial con N8N.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 2 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura"></div>
 							<div class="curso-info">
 								<h5>IA Generativa</h5>
 								<p><strong>Institución:</strong> ONE Alura Latam</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoIA1">Ver
-									más</button>
-								<div id="detallesCursoIA1" class="collapse">
+									data-bs-target="#detallesCursoIA2">Ver más</button>
+								<div id="detallesCursoIA2" class="collapse mt-2">
 									<p><strong>Expedición:</strong> abr. 2025</p>
 									<p><strong>Descripción:</strong> Curso avanzado sobre IA generativa.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 3 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura"></div>
 							<div class="curso-info">
 								<h5>Inteligencia Artificial y Java</h5>
 								<p><strong>Institución:</strong> ONE Alura Latam</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoIA2">Ver
-									más</button>
-								<div id="detallesCursoIA2" class="collapse">
+									data-bs-target="#detallesCursoIA3">Ver más</button>
+								<div id="detallesCursoIA3" class="collapse mt-2">
 									<p><strong>Expedición:</strong> dic. 2024</p>
-									<p><strong>Descripción:</strong> Implementación de IA en desarrollos con JAVA.
-									</p>
+									<p><strong>Descripción:</strong> Implementación de IA en desarrollos con JAVA.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 4 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/ialablogo.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/ialablogo.jpeg" alt="Logo IALAB"></div>
 							<div class="curso-info">
 								<h5>Data Science y Programación IA</h5>
 								<p><strong>Institución:</strong> UBA IALAB</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoIA3">Ver
-									más</button>
-								<div id="detallesCursoIA3" class="collapse">
+									data-bs-target="#detallesCursoIA4">Ver más</button>
+								<div id="detallesCursoIA4" class="collapse mt-2">
 									<p><strong>Expedición:</strong> ago. 2023</p>
 									<p><strong>Descripción:</strong> Implementación de IA en análisis de datos con
 										Python.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 5 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/secretariaecodelconocimiento.jpeg" alt="Logo Alura">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/secretariaecodelconocimiento.jpeg"
+									alt="Logo SEC"></div>
 							<div class="curso-info">
 								<h5>Data Science y Programación IA</h5>
 								<p><strong>Institución:</strong> Secretaría de Economía del Conocimiento</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoIA4">Ver
-									más</button>
-								<div id="detallesCursoIA4" class="collapse">
+									data-bs-target="#detallesCursoIA5">Ver más</button>
+								<div id="detallesCursoIA5" class="collapse mt-2">
 									<p><strong>Expedición:</strong> feb. 2023</p>
 									<p><strong>Descripción:</strong> Deep Learning and Data Analytics.</p>
 								</div>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 
-				<!-- Pestaña 3: Idiomas -->
-				<div class="tab-pane fade" id="idiomas" role="tabpanel" aria-labelledby="idiomas-tab">
+				<div class="tab-pane fade" id="idiomas" role="tabpanel">
 					<div class="cursos-grid">
-						<!-- Curso 1 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/cuilogo.jpeg" alt="Logo CUI">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/cuilogo.jpeg" alt="Logo CUI"></div>
 							<div class="curso-info">
 								<h5>Inglés Técnico</h5>
 								<p><strong>Institución:</strong> Centro Universitario de Idiomas (CUI)</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoIdiomas1">Ver más</button>
-								<div id="detallesCursoIdiomas1" class="collapse">
+									data-bs-target="#detallesCursoID1">Ver más</button>
+								<div id="detallesCursoID1" class="collapse mt-2">
 									<p><strong>Expedición:</strong> ago. 2023</p>
-									<p><strong>Descripción:</strong> Inglés Técnico para Desarrolladores de
-										Software.
+									<p><strong>Descripción:</strong> Inglés Técnico para Desarrolladores de Software.
 									</p>
 								</div>
 							</div>
@@ -1021,102 +769,82 @@
 					</div>
 				</div>
 
-				<!-- Pestaña 4: Otros -->
-				<div class="tab-pane fade" id="otros" role="tabpanel" aria-labelledby="otros-tab">
+				<div class="tab-pane fade" id="otros" role="tabpanel">
 					<div class="cursos-grid">
-						<!-- Curso 1 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/Tecno3F.PNG" alt="Logo Tecno3F">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/Tecno3F.PNG" alt="Logo Tecno3F"></div>
 							<div class="curso-info">
 								<h5>Introducción a la CIBERSEGURIDAD</h5>
 								<p><strong>Institución:</strong> Tecno 3F</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoOtros6">Ver más</button>
-								<div id="detallesCursoOtros6" class="collapse">
+									data-bs-target="#detallesCursoOT1">Ver más</button>
+								<div id="detallesCursoOT1" class="collapse mt-2">
 									<p><strong>Expedición:</strong> nov. 2025</p>
 									<p><strong>Descripción:</strong> Curso de Introducción a la Ciberseguridad.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 2 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/aluralogo.jpeg" alt="Logo UTN">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura"></div>
 							<div class="curso-info">
 								<h5>Oracle Cloud Infrastructure</h5>
 								<p><strong>Institución:</strong> ONE Alura Latam</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoOtros1">Ver más</button>
-								<div id="detallesCursoOtros1" class="collapse">
+									data-bs-target="#detallesCursoOT2">Ver más</button>
+								<div id="detallesCursoOT2" class="collapse mt-2">
 									<p><strong>Expedición:</strong> abr. 2025</p>
-									<p><strong>Descripción:</strong> Implementación de una aplicación en la nube y
-										BD e
+									<p><strong>Descripción:</strong> Implementación de una aplicación en la nube e
 										infraestructura como código.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 3 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/aluralogo.jpeg" alt="Logo UTN">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura"></div>
 							<div class="curso-info">
 								<h5>SQL con MySQL Server de Oracle</h5>
 								<p><strong>Institución:</strong> ONE Alura Latam</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoOtros2">Ver más</button>
-								<div id="detallesCursoOtros2" class="collapse">
+									data-bs-target="#detallesCursoOT3">Ver más</button>
+								<div id="detallesCursoOT3" class="collapse mt-2">
 									<p><strong>Expedición:</strong> abr. 2025</p>
 									<p><strong>Descripción:</strong> Formación: SQL con MySQL.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 4 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/aluralogo.jpeg" alt="Logo UTN">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura"></div>
 							<div class="curso-info">
 								<h5>Emprendimiento, Agilidad y Protagonismo Profesional</h5>
 								<p><strong>Institución:</strong> ONE Alura Latam</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoOtros3">Ver más</button>
-								<div id="detallesCursoOtros3" class="collapse">
+									data-bs-target="#detallesCursoOT4">Ver más</button>
+								<div id="detallesCursoOT4" class="collapse mt-2">
 									<p><strong>Expedición:</strong> sept. 2024</p>
 									<p><strong>Descripción:</strong> Desarrollo de habilidades profesionales.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 5 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/aluralogo.jpeg" alt="Logo UTN">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura"></div>
 							<div class="curso-info">
 								<h5>Desarrollo Personal</h5>
 								<p><strong>Institución:</strong> ONE Alura Latam</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoOtros4">Ver más</button>
-								<div id="detallesCursoOtros4" class="collapse">
+									data-bs-target="#detallesCursoOT5">Ver más</button>
+								<div id="detallesCursoOT5" class="collapse mt-2">
 									<p><strong>Expedición:</strong> jun. 2024</p>
 									<p><strong>Descripción:</strong> Curso de Habilidades Blandas.</p>
 								</div>
 							</div>
 						</div>
-						<!-- Curso 6 -->
 						<div class="curso-card">
-							<div class="curso-logo">
-								<img src="img/logocursos/Tecno3F.PNG" alt="Logo Tecno3F">
-							</div>
+							<div class="curso-logo"><img src="img/logocursos/Tecno3F.PNG" alt="Logo Tecno3F"></div>
 							<div class="curso-info">
 								<h5>Administración de Bases de Datos</h5>
 								<p><strong>Institución:</strong> Tecno 3F</p>
 								<button class="btn-ver-mas" data-bs-toggle="collapse"
-									data-bs-target="#detallesCursoOtros5">Ver más</button>
-								<div id="detallesCursoOtros5" class="collapse">
+									data-bs-target="#detallesCursoOT6">Ver más</button>
+								<div id="detallesCursoOT6" class="collapse mt-2">
 									<p><strong>Expedición:</strong> jun. 2024</p>
 									<p><strong>Descripción:</strong> Curso de MySQL.</p>
 								</div>
@@ -1129,27 +857,41 @@
 	</div>
 
 	<!-- Footer -->
-	<footer id="fondopie">
-		<div class="barrapie" id="contacto">
-			<ul class="social">
-				<li><a href="mailto:sonygahan@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-				<li><a href="http://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-				<li><a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a></li>
-				<li><a href="https://www.youtube.com/channel/UCIZ5SC0ISfqvIeP0G8WREYA" target="_blank"><i
-							class="fab fa-youtube"></i></a></li>
-				<li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-				<li><a href="https://github.com/SonyGahan" target="_blank"><i class="fab fa-github"></i></a></li>
-			</ul>
-			<small>&copy; Derechos reservados <strong>@sonygahan</strong></small>
+<footer id="fondopie">
+	<div class="barrapie">
+		<div class="row align-items-center py-4">
+			<!-- Columna Izquierda: Marca Personal -->
+			<div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+				<h5 class="footer-brand mb-1">Sonia Pereira</h5>
+				<p class="footer-tagline mb-0">Analista de Sistemas & Full Stack Developer</p>
+			</div>
+			
+			<!-- Columna Derecha: Redes Profesionales Compactas -->
+			<div class="col-md-6 text-center text-md-end">
+				<ul class="social-compact">
+					<li><a href="mailto:sonygahan@gmail.com" title="Email"><i class="fas fa-envelope"></i></a></li>
+					<li><a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/SonyGahan" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a></li>
+					<li><a href="https://discord.com" target="_blank" rel="noopener noreferrer" title="Discord"><i class="fab fa-discord"></i></a></li>
+				</ul>
+			</div>
 		</div>
-	</footer>
+		
+		<!-- Línea Divisoria Fina -->
+		<hr class="footer-divider">
+		
+		<!-- Derechos Reservados -->
+		<div class="row">
+			<div class="col-12 text-center">
+				<small class="copyright">&copy; 2026 - Diseñado y desarrollado con ♥ por <strong>@sonygahan</strong></small>
+			</div>
+		</div>
+	</div>
+</footer>
 
-	<!-- Bootstrap JS y dependencias -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-	<!-- Script personalizado -->
 	<script src="js/scripts.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>
