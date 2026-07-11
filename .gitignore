@@ -1,0 +1,25 @@
+# Dependencias de Node (Súper pesadas y se recrean con npm install)
+node_modules/
+.pnpm-store/
+jspm_packages/
+web_modules/
+
+# Archivos de configuración del editor (IntelliJ, VS Code, etc.)
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vs/
+
+# Logs de errores de npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
